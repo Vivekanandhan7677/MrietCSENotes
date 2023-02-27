@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>COMPUTER SCIENCE & ENGINEERING LECTURE NOTES</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<style>
+		#all-img {
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+
+		.head-base {
+			background-color: #007bff;
+			color: black;
+			text-align: end;
+			padding: 170px;
+			/*background-image: url("Collegeimage.jpg");*/
+			background-size: cover;
+			background-position: center;
+			background-size: 100%;
+		}
+
+		.head-text h1 {
+			font-size: 48px;
+			font-weight: bold;
+			margin: 0;
+			text-align: center;
+			background-color: #007bff;
+		}
+
+		.navbar {
+			background-color: #f8f9fa;
+			border-bottom: 1px solid #ced4da;
+		}
+
+		.nav-link {
+			color: #007bff;
+			font-weight: bold;
+			font-size: 18px;
+		}
+
+		.dropdown-menu {
+			background-color: #f8f9fa;
+			border: none;
+		}
+
+		.dropdown-item {
+			color: #007bff;
+		}
+	</style>
+</head>
+
+<body>
+	<img src="mainlogo.png" alt="" height="100" width="480" align="left">
+	<h4 style="align:center;margin-bottom: 0px;margin-top: 0px;"><b>EAMCET CODE: </b><span style="color:red">MRET</span>
+	</h4>
+	<p> Permanently affiliated to <span style="color:red">JNTUH </span>| Approved by <span
+			style="color:red">AICTE</span> | Accredited by <span style="color:red"> NBA &amp; NAAC </span>|
+		<!-- <br>An ISO 9001:2015 Certified Institution-->
+	</p>
+	<h4> <b>
+			<script language="JavaScript1.2" type="text/javascript">
+
+				var message = "AUTONOMOUS CAMPUS"
+				var neonbasecolor = "black"
+				var neontextcolor = "RED"
+				var flashspeed = 100  //in milliseconds
+
+				///No need to edit below this line/////
+
+				var n = 0
+				if (document.all || document.getElementById) {
+					document.write('<font color="' + neonbasecolor + '">')
+					for (m = 0; m < message.length; m++)
+						document.write('<span id="neonlight' + m + '">' + message.charAt(m) + '</span>')
+					document.write('</font>')
+				}
+				else
+					document.write(message)
+
+				function crossref(number) {
+					var crossobj = document.all ? eval("document.all.neonlight" + number) : document.getElementById("neonlight" + number)
+					return crossobj
+				}
+
+				function neon() {
+
+					//Change all letters to base color
+					if (n == 0) {
+						for (m = 0; m < message.length; m++)
+							//eval("document.all.neonlight"+m).style.color=neonbasecolor
+							crossref(m).style.color = neonbasecolor
+					}
+
+					//cycle through and change individual letters to neon color
+					crossref(n).style.color = neontextcolor
+
+					if (n < message.length - 1)
+						n++
+					else {
+						n = 0
+						clearInterval(flashing)
+						setTimeout("beginneon()", 1500)
+						return
+					}
+				}
+
+				function beginneon() {
+					if (document.all || document.getElementById)
+						flashing = setInterval("neon()", flashspeed)
+				}
+				beginneon()
+
+
+			</script>
+			<font color="black"><span id="neonlight0" style="color: red;">A</span><span id="neonlight1"
+					style="color: red;">U</span><span id="neonlight2" style="color: red;">T</span><span id="neonlight3"
+					style="color: red;">O</span><span id="neonlight4" style="color: red;">N</span><span id="neonlight5"
+					style="color: red;">O</span><span id="neonlight6" style="color: red;">M</span><span id="neonlight7"
+					style="color: red;">O</span><span id="neonlight8" style="color: red;">U</span><span id="neonlight9"
+					style="color: red;">S</span><span id="neonlight10" style="color: red;">
+				</span><span id="neonlight11" style="color: red;">C</span><span id="neonlight12"
+					style="color: red;">A</span><span id="neonlight13" style="color: red;">M</span><span
+					id="neonlight14" style="color: red;">P</span><span id="neonlight15"
+					style="color: black;">U</span><span id="neonlight16" style="color: black;">S</span></font>
+		</b></h4>
+	</center>
+	<img id="all-img" src="all.png" alt="" height="100" width="440">
+	<!--<div class="head-base">
+	</div>-->
+	<div class="head-text">
+		<h1>COMPUTER SCIENCE & ENGINEERING LECTURE NOTES</h1>
+	</div>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="#">
+			<img src="logo.jpg" alt="Logo" height="30">
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">I YEAR</a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="1-1 sem.html">I YEAR I SEMESTER</a>
+						<a class="dropdown-item" href="1-2 sem.html">I YEAR II SEMESTER</a>
+					</div>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">II
+						YEAR</a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="2-1 sem.html">II YEAR I SEMESTER</a>
+						<a class="dropdown-item" href="2-2 sem.html">II YEAR II SEMESTER</a>
+					</div>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">III
+						YEAR</a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="3-1 sem.html">III YEAR I SEMESTER</a>
+						<a class="dropdown-item" href="3-2 sem.html">III YEAR II SEMESTER</a>
+					</div>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">IV
+						YEAR</a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="4-1 sem.html">IV YEAR I SEMESTER</a>
+						<a class="dropdown-item" href="4-2 sem.html">IV YEAR II SEMESTER</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
